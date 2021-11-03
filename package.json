@@ -11,6 +11,8 @@
     "faker": "^5.5.3"
   },
   "scripts": {
+    "cy:open": "cypress open --config watchForFileChanges=false",
+    "cy:run": "cypress run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
