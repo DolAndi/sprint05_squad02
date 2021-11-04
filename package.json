@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "cypress": "^8.7.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "ajv": "^8.6.3",
+    "cypress": "^8.7.0",
     "faker": "^5.5.3"
   },
   "scripts": {
