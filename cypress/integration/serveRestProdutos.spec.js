@@ -5,7 +5,7 @@ import Factory from "../dynamics/factory.js"
 var bearer
 var idProduto
 
-describe("Teste da rota login para execução posterior da rota produtos", () => {
+describe("Teste da rota /login para execução posterior da rota /produtos", () => {
     it("Deve validar o login com status code 200 e authorization", () => {
         cy.fixture("loginCredentials").then((user) => {
             cy.logar(user.valido).then( res => {
@@ -28,7 +28,12 @@ describe("Testes da rota /produtos", () => {
                 idProduto = res.body._id
             })
         })
-        it("Deve buscar produto por id e verificar status code 200", () =>{
+        it("Deve buscar produtos e se possui status code 200", () => {
+            cy.buscarProdutos().then(res => {
+                expect(res.status).to.equal(200)
+            })
+        })
+        it("Deve buscar produto por id e se possui status code 200", () =>{
             cy.buscarProdutoPorId(idProduto).then(res => {
                 expect(res.status).to.be.equal(200);
             })
