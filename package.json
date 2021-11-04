@@ -1,13 +1,11 @@
 {
   "name": "sprint05_squad02",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "dependencies": {
-    "cypress": "^8.7.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "ajv": "^8.6.3",
+    "cypress": "^8.7.0",
     "faker": "^5.5.3"
   },
   "scripts": {
@@ -20,10 +18,11 @@
     "url": "git+https://github.com/DolAndi/sprint05_squad02.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Squad 02",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/DolAndi/sprint05_squad02/issues"
   },
-  "homepage": "https://github.com/DolAndi/sprint05_squad02#readme"
+  "homepage": "https://github.com/DolAndi/sprint05_squad02#readme",
+  "description": ""
 }
